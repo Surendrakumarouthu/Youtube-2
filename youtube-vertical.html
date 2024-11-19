@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>.nav-bar{
+        width: 150px;
+          background-color: #ffffff;
+          padding: 8px 0;
+        }
+        .nav-bar{
+        
+        }
+        .nav-bar-item{
+        text-decoration:none;
+        display:block;
+        width:180px;
+        padding:10px;
+        margin-left:-42px;
+        }
+        .nav-bar-item:hover{
+        text-decoration:none;
+        display:block;
+        width:180px;
+        padding:10px;
+        background-color:#ccc;
+        border-radius:13px;
+        
+        }
+        .nav-bar-item img{
+        height:20px;
+        width:20px;
+        margin-right:15px;
+        background-color:transparent;
+        
+         mix-blend-mode: multiply;
+        
+        }
+        .nav-bar-item a{
+        text-decoration:none;
+        font-size:14px;
+        font-family: Roboto, Arial, sans-serif;
+        color:rgb(15, 15, 15);
+        font-weight: 400;
+        
+        }
+        .you{
+        text-decoration:none;
+        font-size:16px;
+        font-family: Roboto;
+        color:#0F0F0F;
+        font-weight: 500;
+        }
+        .videos{
+         width: 370px; 
+            height: 220px; 
+            padding: 10px; 
+        border-radius:20px;
+        
+          
+         }
+        figcaption{
+        font-family: Roboto, Arial, sans-serif;
+        font-size:14px;
+        line-height:22px;
+        font-weight:500;
+        
+        
+        }
+        figure{
+        margin:10px;
+        border-radius:20px;
+        }
+        .main-videos{
+        margin-left:250px;
+        display:inline-block;
+        display: flex; 
+        flex-wrap: wrap; 
+        }
+        .main-videos{
+        margin-left:200px;
+        margin-top:-2000px;
+        position:absolute;
+        }
+        .vertical-line {
+            width: 1px;             
+            height: 2000px;           
+            background-color: #ccc; 
+            margin-left:200px;
+        margin-top:-2000px;     
+        position:absolute;     
+        }
+         .searchbar {
+            
+            
+        position:absolute;
+        left:400px;
+        top:30px;
+          }
+        .fa-search {
+            
+            font-size: 16px;
+        margin-left:8px;
+        margin-top:10px;
+         
+            
+        }
+        .searchbar-icon{
+        border: 1px solid #ccc; 
+        cursor:pointer;
+        border-top-right-radius:40px;
+        border-bottom-right-radius:40px;
+        height:40px;
+        width:40px;
+        border-left-radius:none;
+        box-model:border-box;
+        position:absolute;
+        
+          }
+        .searchbar-icon:hover{
+        background-color:#ccc;
+        cursor:pointer;
+        
+        }
+        input{
+         width:550px;
+           border-top-left-radius:40px;
+        border-bottom-left-radius:40px;
+          height:40px;
+        padding:20px;
+        border:1px solid #ccc;
+        
+        
+        }
+        input::placeholder{
+        margin-left:20px;
+          color: #aaa;
+          padding:20px;
+        
+        }
+        input:focus{
+        border:none;
+        outline:none;
+        outline:1px solid #d3d3d3;
+        
+        }
+        
+          .nav-hori {
+            display: flex;
+            align-items: center;
+            
+          }
+        
+          .hori {
+            display: flex;
+            align-items: center;
+          }
+        
+          .create {
+            background: none;
+            border: none;
+            display: inline-flex;
+          }
+        .youtube-image{
+        height:80px;
+        width:200px;
+        border-radius:40px;
+        border:none;
+        background-color:transparent;
+        
+        }
+        .youtube-image-button{
+        
+        border-radius:40px;
+        cursor:pointer;
+        border:none;
+        background-color:transparent;
+        
+        
+        }
+        .fa-bars {
+          
+            font-size: 22px;
+        cursor:pointer;
+        
+         
+        }
+        .fa-microphone {
+            color: #010;
+            font-size: 22px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 100px;
+            position: absolute;
+            left: 1050px; 
+        background-color:#F2F2F2;
+         
+        }
+        
+        .nav-hr{
+        width:170px;
+        margin-left:-50px;
+        color:#ccc;
+        }
+         .fa-chevron-right {
+         color: #333;
+         font-size: 15px;
+         cursor: pointer;
+        margin-left:5px;
+         }
+        .fa-bell{
+         color: #010;
+            font-size: 20px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 100px;
+            position: absolute;
+            left: 1370px; 
+        background-color:#F2F2F2;
+        
+        
+        }
+        .create-video{
+        
+        color: #010;
+           top:30px;
+            border: none;
+            outline: none;
+         
+            border-radius: 100px;
+            position: absolute;
+            left: 1300px; 
+        
+            
+        
+        }
+        .create-video>img{
+        
+        mix-blend-mode: multiply;
+        pointer:cursor;
+        width:32px;
+        background-color: rgba(255, 255, 255, 0.5);
+        }
+        .symbol{
+        background-color:#AA47BC;
+        color:white;
+        height:30px;
+        width:30px;
+        border-radius:100px;
+        border:none;
+        position:absolute;
+        left:1440;
+        font-size:20px;
+        padding:5px;
+        display:flex;
+        justify-content:center;
+        }
+        .sub-head-nav-bar{
+        width:180px;
+        margin-left:-30px;
+        font-size:18px;
+        }
+        .nav-bar-span a{
+        
+        text-decoration:none;
+        color:rgb(96,96,96);
+        font-size:14px;
+        font-weight: 500;
+        font-family:Roboto, Arial, sans-serif;
+        line-height:18px;
+        
+        }
+        .nav-bar-span{
+        color:#909090;
+        line-height:15px;
+        word-spacing:5px;
+        font-family: Roboto;
+        
+        }
+        .nav-span{
+        margin-left:-20px;
+        
+        }
+        .buttons-nav-bar{
+        background-color:none;
+        position:absolute;
+        margin-left:160px;
+        margin-top:-2060px;
+        margin-bottom:30px;
+        padding:20px;
+        display:flex;
+        flex-direction:row;
+        }
+        .buttons-nav-bar button {
+            border-radius: 30px;
+            background-color: #F2F2F2;
+            width: 120px; 
+            max-width: 250px; 
+            border: none;
+            height: 30px;
+            outline: none;
+            color: #0F0F0F;
+            font-weight: 600;
+            margin-left: 15px;
+            padding: 2px 12px; 
+            white-space: nowrap; 
+        }
+        .buttons-nav-bar button:click{
+        
+        background-color:#0F0F0F;
+        
+        }
+        .nav-hori{
+        
+        display:flex;
+        flex-direction:row;
+        align-elements:start;
+        }
+        </style>
+</head>
+<body>
+    
+    <nav class="nav-bar">
+        <ul class="nav-bar-nav">
+          <li class="nav-bar-item">
+            <a href="#"><img src="youtube home.png" alt="Home-Icon"> Home</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="youtube shorts.png" alt="Shorts-Icon"> Shorts</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="subscriptions.png" alt="Subscriptions-Icon"> Subscriptions</a>
+          </li>
+      
+          <hr class="nav-hr">
+         <li class="nav-bar-item">
+            <a href="#">You<i class="fa fa-chevron-right"></i></a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="your channel.png" alt="Library Icon"> Your channels</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="History.png" alt="History Icon"> History</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="your-videos.png" alt="Your Videos Icon"> Your videos</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Watch later.png" alt="Watch Later Icon"> Watch later</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Liked videos.png" alt="Liked Videos Icon"> Liked videos</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Downloads.png" alt="Downloads Icon"> Downloads</a>
+          </li>
+      
+          <hr class="nav-hr">
+      
+          <h3 class="sub-head-nav-bar">Subscriptions</h3>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922522.png" alt="Subscription Icon 1"> Channel 1</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922519.png" alt="Subscription Icon 2"> Channel 2</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922525.png" alt="Subscription Icon 3"> Channel 3</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922518.png" alt="Subscription Icon 4"> Channel 4</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922517.png" alt="Subscription Icon 5"> Channel 5</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2922/2922515.png" alt="Subscription Icon 6"> Channel 6</a>
+          </li>
+           <li class="nav-bar-item">Show more<i class="fa fa-caret-down"></i></li>
+      
+          <hr class="nav-hr">
+      
+          <h3 class="sub-head-nav-bar">Explore</h3>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Trendings.png"" alt="Trending Icon"> Trending</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Shoppings.png" alt="Shopping Icon"> Shopping</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Music.png" alt="Music Icon"> Music</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Films.png" alt="Films Icon"> Films</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Live.png" alt="Live Icon"> Live</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Gaming.png" alt="Gaming Icon"> Gaming</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="News.png" alt="News Icon"> News</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Sports.png" alt="Sports Icon"> Sport</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Courses.png" alt="Courses Icon"> Courses</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Fashion.png" alt="Fashion Icon"> Fashion & Beauty</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="Pocasts.png" alt="Podcasts Icon"> Podcasts</a>
+          </li>
+      
+          <hr class="nav-hr">
+      
+          <h3 class="sub-head-nav-bar">More from YouTube</h3>
+          <li class="nav-bar-item">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/128/15047/15047410.png" alt="Premium Icon"> YouTube Premium</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="youtube studio.png" alt="Studio Icon"> YouTube Studio</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="YouTube Music.png" alt="Music Icon"> YouTube Music</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="YouTube Kids.png" alt="Kids Icon"> YouTube Kids</a>
+          </li>
+          <hr class="nav-hr">
+      
+          <li class="nav-bar-item">
+            <a href="#"><img src="setting.png" alt="Settings Icon"> Settings</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="report.png" alt="Report history Icon"> Report history</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="help.png" alt="Help Icon"> Help</a>
+          </li>
+          <li class="nav-bar-item">
+            <a href="#"><img src="feedback.png" alt="Feedback Icon"> Send feedback</a>
+          </li>
+      <div class="nav-span">
+          <span class="nav-bar-span"><a href="">About</a> <a href="">Press </a><a href="">Copyright</a><a href=""> Contact us </a><a href="">Creator</a><a href=""> Advertise </a><br>
+      <a href="">Developers</a><a href=""> Terms Privacy Policy</a> <a href=""> & Safety </a> <a href="">How YouTube works Test new features </a><span>&copy; 2024 Google LLC</span></span>
+      
+    <br>
+<br></div>
+      </ul>
+    </nav>
+    
+</body>
+</html>

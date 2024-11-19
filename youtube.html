@@ -1,0 +1,433 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+.nav-bar{
+width: 150px;
+  background-color: #ffffff;
+  padding: 8px 0;
+}
+.nav-bar{
+
+}
+.nav-bar-item{
+text-decoration:none;
+display:block;
+width:180px;
+padding:10px;
+margin-left:-42px;
+}
+.nav-bar-item:hover{
+text-decoration:none;
+display:block;
+width:180px;
+padding:10px;
+background-color:#ccc;
+border-radius:13px;
+
+}
+.nav-bar-item img{
+height:20px;
+width:20px;
+margin-right:15px;
+background-color:transparent;
+
+ mix-blend-mode: multiply;
+
+}
+.nav-bar-item a{
+text-decoration:none;
+font-size:14px;
+font-family: Roboto, Arial, sans-serif;
+color:rgb(15, 15, 15);
+font-weight: 400;
+
+}
+.you{
+text-decoration:none;
+font-size:16px;
+font-family: Roboto;
+color:#0F0F0F;
+font-weight: 500;
+}
+.videos{
+ width: 370px; 
+    height: 220px; 
+    padding: 10px; 
+border-radius:20px;
+
+  
+ }
+figcaption{
+font-family: Roboto, Arial, sans-serif;
+font-size:14px;
+line-height:22px;
+font-weight:500;
+
+
+}
+figure{
+margin:10px;
+border-radius:20px;
+}
+.main-videos{
+margin-left:250px;
+display: flex; 
+flex-wrap: wrap; 
+margin-left:250px;
+
+margin-top:100px;
+}
+
+.vertical-line {
+    width: 1px;             
+    height: 2000px;           
+    background-color: #ccc; 
+    margin-left:200px;
+margin-top:-2000px;     
+position:absolute;     
+}
+ .searchbar {
+    
+    
+position:absolute;
+left:400px;
+top:30px;
+  }
+.fa-search {
+    
+    font-size: 16px;
+margin-left:8px;
+margin-top:10px;
+ 
+    
+}
+.searchbar-icon{
+border: 1px solid #ccc; 
+cursor:pointer;
+border-top-right-radius:40px;
+border-bottom-right-radius:40px;
+height:40px;
+width:40px;
+border-left-radius:none;
+box-model:border-box;
+position:absolute;
+
+  }
+.searchbar-icon:hover{
+background-color:#ccc;
+cursor:pointer;
+
+}
+input{
+ width:550px;
+   border-top-left-radius:40px;
+border-bottom-left-radius:40px;
+  height:40px;
+padding:20px;
+border:1px solid #ccc;
+
+
+}
+input::placeholder{
+margin-left:20px;
+  color: #aaa;
+  padding:20px;
+
+}
+input:focus{
+border:none;
+outline:none;
+outline:1px solid #d3d3d3;
+
+}
+
+  .nav-hori {
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .hori {
+    display: flex;
+    align-items: center;
+  }
+
+  .create {
+    background: none;
+    border: none;
+    display: inline-flex;
+  }
+.youtube-image{
+height:80px;
+width:200px;
+border-radius:40px;
+border:none;
+background-color:transparent;
+
+}
+.youtube-image-button{
+
+border-radius:40px;
+cursor:pointer;
+border:none;
+background-color:transparent;
+
+
+}
+.fa-bars {
+  
+    font-size: 22px;
+cursor:pointer;
+
+ 
+}
+.fa-microphone {
+    color: #010;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 100px;
+    position: absolute;
+   left: 90px;
+   top: -5px;
+background-color:#F2F2F2;
+ 
+}
+
+.nav-hr{
+width:170px;
+margin-left:-50px;
+color:#ccc;
+}
+ .fa-chevron-right {
+ color: #333;
+ font-size: 15px;
+ cursor: pointer;
+margin-left:5px;
+ }
+.fa-bell{
+ color: #010;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 100px;
+    position: absolute;
+    left: 290px; 
+background-color:#F2F2F2;
+top:-5px;
+
+
+}
+.create-video{
+
+color: #010;
+   top:30px;
+    border: none;
+    outline: none;
+ 
+    border-radius: 100px;
+   position: absolute;
+   left:200px;
+   top:-5px
+    
+
+    
+
+}
+.create-video>img{
+
+mix-blend-mode: multiply;
+pointer:cursor;
+width:32px;
+background-color: rgba(255, 255, 255, 0.5);
+}
+.symbol{
+background-color:#AA47BC;
+color:white;
+height:30px;
+width:30px;
+border-radius:100px;
+border:none;
+position:absolute;
+left:430px;
+font-size:20px;
+padding:5px;
+display:flex;
+justify-content:center;
+top:0px;
+}
+.sub-head-nav-bar{
+width:180px;
+margin-left:-30px;
+font-size:18px;
+}
+.nav-bar-span a{
+
+text-decoration:none;
+color:rgb(96,96,96);
+font-size:14px;
+font-weight: 500;
+font-family:Roboto, Arial, sans-serif;
+line-height:18px;
+
+}
+.nav-bar-span{
+color:#909090;
+line-height:15px;
+word-spacing:5px;
+font-family: Roboto;
+
+}
+.nav-span{
+margin-left:-20px;
+
+}
+.top-div{
+  position: fixed;
+background-color: white;
+width: 1500px;
+top:0px;
+
+}
+.buttons-nav-bar{
+background-color:none;
+position:absolute;
+margin-left:160px;
+margin-top:-2060px;
+margin-bottom:30px;
+padding:20px;
+display:flex;
+flex-direction:row;
+}
+.buttons-nav-bar button {
+    border-radius: 30px;
+    background-color: #F2F2F2;
+    width: 120px; 
+    max-width: 250px; 
+    border: none;
+    height: 30px;
+    outline: none;
+    color: #0F0F0F;
+    font-weight: 600;
+    margin-left: 15px;
+    padding: 2px 12px; 
+    white-space: nowrap; 
+}
+.buttons-nav-bar button:click{
+
+background-color:#0F0F0F;
+
+}
+.nav-hori{
+
+display:flex;
+flex-direction:row;
+align-elements:start;
+}
+.sidenav{
+  position: fixed;
+  top:80px;
+}
+
+</style>
+</head>
+<body>
+  <div class="top-div" >
+  <nav class="nav-hori">
+    <div class="hori">
+    
+        <i class="fa fa-bars"></i>
+          <div class="hori">
+            <button class="youtube-image-button"><img src="https://routenote.com/blog/wp-content/uploads/2021/11/youtube.png" alt="youtube-image" class="youtube-image"></button>
+          </div>
+    </nav>
+      <div class="searchbar">
+        <form>
+          <input type="text" placeholder="Search">
+  
+  <buttton class="searchbar-icon" ><i class="fa fa-search"></i></button>
+    <div class="after-search">
+    <i class="fa fa-microphone" title="search with your voice"></i>
+    <button class="create-video"><img src="top video.png"></button> 
+    <i class="fa fa-bell"></i>
+<button class="symbol">S</button>
+</div>
+        </form>
+       
+  
+  </div> 
+     
+  </div>
+      
+      
+    </div>
+  </nav>
+</div>
+<div class="sidenav">
+  <iframe src="youtube-vertical.html" height="700" width="220" frameborder="0"></iframe>
+</div>
+  <br>
+  <!--
+
+-->
+</nav>
+<div class="buttons-nav-bar">
+
+  <button class="button">All</button>
+  <button class="button">Music</button>
+  <button class="button">Telugu Cinema</button>
+  <button class="button">Mixes</button>
+  <button class="button">Prabhas</button>
+  <button class="button">Mahesh Babu</button>
+  <button class="button">News</button>
+  
+  </div>
+</div>
+<!--<div class="vertical-line"></div>-->
+<div class="main-videos">
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+</iframe><figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption></figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption>
+</figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption></figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/8LV-riD_yco?si=ReBnnaIwxwvz6AOa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe
+><figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption></figure>
+<figure><iframe class="videos" src="https://www.youtube.com/embed/ViuGKPazWWw?si=RyDYLFW34Q4ajmSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>7th Sense - Mutyala Dhaarani Video | Suriya | Harris Jayaraj<br>SonyMusicSouthVEVO<br>15M views<br>7 years ago</figcaption></figure>
+
+<figure>
+
+<iframe  class="videos"src="https://www.youtube.com/embed/PR9iBc-ChcA?si=MNa_qVD4UFuyYbCp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<figcaption>Virat kohli 94*(50) VS west indies #cricket #viratkohli #westindies <br>#india #viralvideo</figcaption>
+</figure>
+</div>
+</body>
+</html>
